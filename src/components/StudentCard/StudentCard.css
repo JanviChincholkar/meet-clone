@@ -1,0 +1,33 @@
+.studentcard-container{
+    background-color: #454545;
+    height: 150px;
+    width: 300px;
+    border-radius: 20px;
+    color: white;
+    position: relative;
+    margin: 5px;
+}
+
+.student-name-text{
+    position: absolute;
+    left: 15px;
+    bottom: 15px;
+    font-size: 20pz;
+}
+
+.studentImage{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    display: block;
+    margin: 20px auto;
+}
+
+.mic-img{
+    height: 40px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background-color: white;
+    border-radius: 50px;
+}

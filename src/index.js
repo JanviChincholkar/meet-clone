@@ -1,10 +1,16 @@
 
 import ReactDOM from 'react-dom/client';
+import Home from "./views/Home/Home"
+import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <h1> Google Meet</h1>
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Home/>
+  }
+]
 );
 
-
+root.render( <RouterProvider router={ router} />)

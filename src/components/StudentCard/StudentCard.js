@@ -1,9 +1,15 @@
 import "./StudentCard.css"
-
-function StudentCard() {
+import Micon from "./../StudentCard/img/micon.png"
+import Micoff from "./../StudentCard/img/micoff.png"
+function StudentCard( {studentName,  studentImage, micState})
+{
     return (
-        <div> <h1> StudentCard</h1></div>
+        <div className="studentcard-container">
+< img src={micState ? Micon : Micoff} className="mic-img"/>
+            <img src={studentImage} className="studentImage" />
+            <span className="student-name-text" >{studentName} </span>
+             </div>
     )
 }
 
-export default StudentCard
+export default StudentCard 
